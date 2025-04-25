@@ -20,6 +20,7 @@ export enum ETech {
 	flask = 'Flask',
 	sqlalchemy = 'SQLAlchemy',
 	swagger = 'Swagger',
+	rabbitmq = 'RabbitMQ',
 
 	// Frontend
 	reactjs = 'ReactJS',
@@ -82,7 +83,7 @@ export interface IResume {
 	contacts: IContact[];
 	coreStack: { name: ETech; years: number }[];
 	hobbies: string[];
-	experience: IJob[];
+	history: IJob[];
 }
 
 const START_DATE = new Date('2016 Jan');
@@ -96,37 +97,63 @@ export const RESUME: IResume = {
 		<br />I value a job that challenges me to learn and grow in my career.
 		Work-life balance is important to me, so I appreciate a job that allows for flexible hours and the ability to work remotely.`,
 	coreStack: [
-		{ name: ETech.javascript, years: 7 },
-		{ name: ETech.typescript, years: 5 },
-		{ name: ETech.nodejs, years: 5 },
-		{ name: ETech.nestjs, years: 4 },
-		{ name: ETech.postgres, years: 4 },
-		{ name: ETech.typeorm, years: 4 },
+		{ name: ETech.javascript, years: 9 },
+		{ name: ETech.typescript, years: 7 },
+		{ name: ETech.nodejs, years: 7 },
+		{ name: ETech.nestjs, years: 6 },
+		{ name: ETech.postgres, years: 6 },
+		{ name: ETech.typeorm, years: 6 },
 		{ name: ETech.mongodb, years: 3 },
 		{ name: ETech.mongoose, years: 3 },
 
-		{ name: ETech.html, years: 7 },
-		{ name: ETech.reactjs, years: 6 },
-		{ name: ETech.redux, years: 6 },
-		{ name: ETech.mobx, years: 3 },
+		{ name: ETech.html, years: 10 },
+		{ name: ETech.reactjs, years: 8 },
+		{ name: ETech.redux, years: 7 },
+		{ name: ETech.mobx, years: 4 },
 		{ name: ETech.web3, years: 2 },
 
-		{ name: ETech.git, years: 6 },
-		{ name: ETech.linux, years: 4 },
-		{ name: ETech.docker, years: 3 },
-		{ name: ETech.jest, years: 2 },
-		{ name: ETech.python, years: 2 },
-		{ name: ETech.aws, years: 2 },
+		{ name: ETech.git, years: 9 },
+		{ name: ETech.linux, years: 7 },
+		{ name: ETech.docker, years: 6 },
+		{ name: ETech.jest, years: 4 },
+		{ name: ETech.python, years: 3 },
 		{ name: ETech.nginx, years: 2 },
 	],
-	experience: [
+
+	history: [
+		{
+			role: 'Senior Backend - Teamlead',
+			companyName: 'haqqex.com',
+			projectDesc: `Sharia-compliant islamic crypto trading exchange.`,
+			from: new Date('2023 May'),
+			to: new Date('2024 Oct'),
+			achievements: [
+				'Developed a mechanism for trading orders and trading pairs',
+				'Implemented a mechanism for deposits and withdrawals of crypto assets',
+				'Supported high-performance solutions in conditions of high load on trading servers',
+				'Wrote integration tests to identify any potential issues before release',
+				'Planned technical sprints with focus on the most priority goals',
+				'Led technical interviews for potential backend developers',
+			],
+			stack: [
+				ETech.typescript,
+				ETech.nodejs,
+				ETech.nestjs,
+				ETech.postgres,
+				ETech.rabbitmq,
+
+				ETech.docker,
+				ETech.jest,
+			],
+		},
+
 		{
 			role: 'Teamlead',
 			companyName: 'BLLNG.com',
 			projectDesc: `A crypto project for processing transactions across multiple blockchain networks.
 			This platform provides the embedding of crypto payments, which allows users to pay for products and services using cryptocurrency.`,
-			to: new Date('2023 May'),
 			from: new Date('2022 Apr'),
+			to: new Date('2023 May'),
 			achievements: [
 				'Developed MVP version of web service, resulting in a successful launch of the platform',
 				'Planned technical sprints for both backend and frontend teams, resulting in increased productivity',
@@ -158,8 +185,8 @@ export const RESUME: IResume = {
 			companyName: 'IBM',
 			projectDesc: `I worked with the IBM team to develop a web application for Geologists to reduce the cost of drilling and developing new sites.
 			The project involved both frontend, design, and backend specialists, as well as geologists on the customer side, and machine learning specialists.`,
-			to: new Date('2022 Apr'),
 			from: new Date('2021 Sep'),
+			to: new Date('2022 Apr'),
 			achievements: [
 				'Developed a GraphQL API that utilized advanced geological analytics operations, enabling more sophisticated data analysis and visualization capabilities for end users',
 				'Established and maintained a highly scalable microservice architecture for four different services, ensuring seamless communication and data flow between them',
@@ -185,8 +212,8 @@ export const RESUME: IResume = {
 			projectDesc: `Together with my colleague and a small team of junior developers,
 			we implemented a video chat application with game mechanics.
 			Unfortunately, our startup failed to launch successfully.`,
-			to: new Date('2021 Sep 30'),
 			from: new Date('2021 Jan'),
+			to: new Date('2021 Sep 30'),
 			achievements: [
 				'Developed a robust web application from zero, starting with an idea and taking it to a minimum viable product (MVP)',
 				'Planned technical issues and worked on sprints planning for the team, ensuring that everyone had clear priorities and a roadmap for completing tasks efficiently and effectively',
@@ -212,8 +239,8 @@ export const RESUME: IResume = {
 			companyName: 'IBM',
 			projectDesc: `I joined the IBM team on an existing project at the initial stage.
 			We were developing a system to reduce the costs of work related to drilling and oil facilities.`,
-			to: new Date('2021 Jan'),
 			from: new Date('2019 Oct'),
+			to: new Date('2021 Jan'),
 			achievements: [
 				'Helped to solve critical issues for minimizing operational costs at a drilling company, utilizing technical expertise to identify inefficiencies and streamline processes',
 				'Developed and maintained a microservice gateway to work with the Primavera system, enabling efficient and reliable communication between different components of the system',
@@ -239,8 +266,8 @@ export const RESUME: IResume = {
 				It was necessary to develop a platform for betting on soccer matches.
 				Together with a small team, I managed to develop the MVP in a short time.
 				Unfortunately, the owners were not able to continue this project.`,
-			to: new Date('2019 Aug'),
 			from: new Date('2019 Mar'),
+			to: new Date('2019 Aug'),
 			achievements: [
 				'Developed a web application from Zero to MVP, utilizing technical expertise to design, develop and deploy a fully functional application that met all customer requirements',
 				'Planned backend and blockchain issues for the team, utilizing strategic planning and project management skills to identify potential roadblocks and develop solutions that ensured the timely delivery of high-quality software',
@@ -261,8 +288,8 @@ export const RESUME: IResume = {
 			role: 'Frontend Developer',
 			companyName: 'RobotVera',
 			projectDesc: `My first experience of participating in a startup, Robot Vera, is an AI assistant for searching candidates and making automated phone calls to them. The main client was a large business.`,
-			to: new Date('2019 Aug'),
 			from: new Date('2018 Jul'),
+			to: new Date('2019 Aug'),
 			achievements: [
 				'Enhanced the frontend performance of a web application, resulting in a faster and more responsive user experience',
 				'Developed and maintained a Content Management System (CMS) for company-wide use, streamlining content creation and management processes',
@@ -276,8 +303,8 @@ export const RESUME: IResume = {
 			companyName: 'Freelance - Dextra - Unit6',
 			projectDesc: `First steps in web development. I combined work in studio offices and remote freelancing.
 			A lot of questions and answers - as a result, I have gained a lot of experience in different fields.`,
-			to: new Date('2018 Jun'),
 			from: START_DATE,
+			to: new Date('2018 Jun'),
 			achievements: [
 				'Created numerous web page markups with cross-platform support to ensure optimal user experience',
 				'Developed custom WordPress applications for freelance clients to meet their specific needs and requirements',
@@ -304,7 +331,8 @@ export const RESUME: IResume = {
 		'🍳 I enjoy cooking and experimenting with different recipes',
 	],
 	contacts: [
-		{ name: 'Email', value: 'hi@emil.pw' },
+		{ name: 'Email', value: '3zemil@gmail.com' },
+		{ name: 'Telegram', value: '@emilzar' },
 		{ name: 'LinkedIn', value: 'https://www.linkedin.com/in/zemil' },
 	],
 };

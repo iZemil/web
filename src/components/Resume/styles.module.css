@@ -43,17 +43,18 @@
 	background: var(--ifm-color-primary);
 	stroke: #fff;
 	border-radius: 50%;
-	width: 42px;
-	height: 42px;
+	width: 64px;
+	height: 64px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 0;
+	opacity: 0.88;
 }
 
 .download svg {
-	width: 24px;
-	height: 24px;
+	width: 32px;
+	height: 32px;
 }
 
 .section {
@@ -89,7 +90,7 @@
 }
 .jobDesc {
 	margin-bottom: 10px;
-	color: var(--ifm-color-emphasis-800);
+	color: var(--ifm-color-emphasis-700);
 }
 .jobDates {
 	position: relative;
@@ -99,6 +100,9 @@
 	content: '•';
 	position: absolute;
 	left: 0;
+}
+.jobDatesDistance {
+	color: var(--ifm-color-emphasis-800);
 }
 .jobSkills {
 	display: flex;
@@ -121,7 +125,7 @@
 	left: 0;
 	width: 100%;
 	z-index: 999;
-	background: var(--ifm-color-primary);
+	background: #3578e5;
 	color: #fff;
 	display: flex;
 	align-items: center;

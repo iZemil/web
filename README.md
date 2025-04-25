@@ -1,31 +1,10 @@
-# emil.pw
+# Web
 
-My website
+My Career History
 
-### Installation
+### Scripts
 
-```
-$ yarn
-```
-
-### Local Development
-
-```
-$ yarn dev
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-```
-$ yarn deploy
-```
+-   `yarn` dependencies installation
+-   `yarn dev` local Development
+-   `yarn build` build project. _This command generates static content into the `build` directory and can be served using any static contents hosting service_
+-   `yarn deploy` deploy to github pages

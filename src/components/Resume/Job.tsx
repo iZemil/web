@@ -1,5 +1,5 @@
+import { differenceInMonths, format } from 'date-fns';
 import * as React from 'react';
-import { format, formatDistance } from 'date-fns';
 
 import { IJob } from './consts';
 import styles from './styles.module.css';
@@ -23,7 +23,8 @@ export const Job = (props: IJob) => {
 			<h4 className={styles.jobCompany}>
 				{companyName}{' '}
 				<div className={styles.jobDates}>
-					{date(from)} – {date(to)} ({formatDistance(from, to)})
+					{date(from)} – {date(to)}{' '}
+					<span className={styles.jobDatesDistance}>({differenceInMonths(to, from)} months)</span>
 				</div>
 			</h4>
 			<div className={styles.jobDesc}>{projectDesc}</div>

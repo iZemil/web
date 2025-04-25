@@ -14,5 +14,5 @@ export const Status = (props: IProps) => {
 		return null;
 	}
 
-	return <div className={clsx([styles.resumeStatus, 'no-print'])}>Open to work</div>;
+	return <div className={clsx([styles.resumeStatus, 'no-print'])}>considering offers</div>;
 };

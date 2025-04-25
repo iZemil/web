@@ -1,11 +1,11 @@
-import * as React from 'react';
 import clsx from 'clsx';
+import * as React from 'react';
 
-import { RESUME, ETech } from './consts';
-import { Section } from './Section';
+import { ETech, RESUME } from './consts';
 import { Job } from './Job';
-import styles from './styles.module.css';
+import { Section } from './Section';
 import { Status } from './Status';
+import styles from './styles.module.css';
 
 export function Resume() {
 	const [downloadCounter, setDownloadCounter] = React.useState(0);
@@ -81,7 +81,7 @@ export function Resume() {
 			</Section>
 
 			<Section title="Experience">
-				{RESUME.experience.map((it, key) => (
+				{RESUME.history.map((it, key) => (
 					<Job key={key} {...it} />
 				))}
 			</Section>

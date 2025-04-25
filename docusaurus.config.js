@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
 	title: 'EMIL – PRO WEB',
 	tagline: 'Full-Stack Developer',
-	url: 'https://emil.pw',
+	url: 'https://zemil.ru',
 	baseUrl: '/',
 	trailingSlash: true,
 	onBrokenLinks: 'throw',
@@ -18,7 +18,7 @@ const config = {
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
 	organizationName: 'izemil', // Usually your GitHub org/user name.
-	projectName: 'emil.pw', // Usually your repo name.
+	projectName: 'zemil.ru', // Usually your repo name.
 
 	// Even if you don't use internalization, you can use this field to set useful
 	// metadata like html lang. For example, if your site is Chinese, you may want
@@ -56,6 +56,11 @@ const config = {
 				// },
 				items: [
 					// { to: '/products', label: 'Products', position: 'left' },
+					{
+						href: 'https://stackoverflow.com/users/8410290/zemil',
+						label: 'Stackoverflow',
+						position: 'right',
+					},
 					{
 						href: 'https://github.com/izemil',
 						label: 'GitHub',
