@@ -126,7 +126,7 @@ export const RESUME: IResume = {
 			companyName: 'haqqex.com',
 			projectDesc: `Sharia-compliant islamic crypto trading exchange.`,
 			from: new Date('2023 May'),
-			to: new Date('2024 Oct'),
+			to: new Date('2025 Aug'), // 2024 Oct
 			achievements: [
 				'Developed a mechanism for trading orders and trading pairs',
 				'Implemented a mechanism for deposits and withdrawals of crypto assets',
