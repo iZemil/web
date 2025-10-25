@@ -126,7 +126,7 @@ export const RESUME: IResume = {
 			companyName: 'haqqex.com',
 			projectDesc: `Sharia-compliant islamic crypto trading exchange.`,
 			from: new Date('2023 May'),
-			to: new Date('2025 Jul'), // real = 2024 Oct
+			to: new Date('2025 Jul'),
 			achievements: [
 				'Developed a mechanism for trading orders and trading pairs',
 				'Implemented a mechanism for deposits and withdrawals of crypto assets',
@@ -148,9 +148,9 @@ export const RESUME: IResume = {
 		},
 
 		{
-			role: 'Teamlead',
+			role: 'Teamlead, CEO',
 			companyName: 'BLLNG.com',
-			projectDesc: `A crypto project for processing transactions across multiple blockchain networks.
+			projectDesc: `My startup venture: a crypto project for processing transactions across multiple blockchain networks.
 			This platform provides the embedding of crypto payments, which allows users to pay for products and services using cryptocurrency.`,
 			from: new Date('2022 Apr'),
 			to: new Date('2023 May'),
@@ -185,12 +185,13 @@ export const RESUME: IResume = {
 			companyName: 'IBM',
 			projectDesc: `I worked with the IBM team to develop a web application for Geologists to reduce the cost of drilling and developing new sites.
 			The project involved both frontend, design, and backend specialists, as well as geologists on the customer side, and machine learning specialists.`,
-			from: new Date('2021 Sep'),
+			from: new Date('2019 Oct'),
 			to: new Date('2022 Apr'),
 			achievements: [
 				'Developed a GraphQL API that utilized advanced geological analytics operations, enabling more sophisticated data analysis and visualization capabilities for end users',
 				'Established and maintained a highly scalable microservice architecture for four different services, ensuring seamless communication and data flow between them',
 				'Worked closely with analytics and product managers to identify and develop new application features, resulting in enhanced functionality and an improved user experience',
+				'Integrated machine learning features with core backend services on python and nodejs',
 				'Reviewed the work of the backend development team, providing feedback and guidance on coding standards, design patterns, and best practices',
 				'Conducted Javascript technical interviews with potential candidates, assessing their skills and experience',
 			],
@@ -207,60 +208,7 @@ export const RESUME: IResume = {
 		},
 
 		{
-			role: 'Tech Lead',
-			companyName: 'Sparkme.club',
-			projectDesc: `Together with my colleague and a small team of junior developers,
-			we implemented a video chat application with game mechanics.
-			Unfortunately, our startup failed to launch successfully.`,
-			from: new Date('2021 Jan'),
-			to: new Date('2021 Sep 30'),
-			achievements: [
-				'Developed a robust web application from zero, starting with an idea and taking it to a minimum viable product (MVP)',
-				'Planned technical issues and worked on sprints planning for the team, ensuring that everyone had clear priorities and a roadmap for completing tasks efficiently and effectively',
-				'Mentored two junior frontend developers on the team, providing guidance on coding best practices, architecture, and design patterns to help them grow their skills and contribute more effectively to the project',
-				'Reviewed all team code to ensure it met high standards for quality, security, and maintainability, providing feedback and suggestions',
-			],
-			stack: [
-				ETech.typescript,
-				ETech.express,
-				ETech.socketio,
-				ETech.reactjs,
-				ETech.redux,
-				ETech.webrtc,
-				ETech.mongodb,
-				ETech.mongoose,
-				ETech.redis,
-				ETech.jest,
-				ETech.aws,
-			],
-		},
-		{
-			role: 'Senior Backend Developer',
-			companyName: 'IBM',
-			projectDesc: `I joined the IBM team on an existing project at the initial stage.
-			We were developing a system to reduce the costs of work related to drilling and oil facilities.`,
-			from: new Date('2019 Oct'),
-			to: new Date('2021 Jan'),
-			achievements: [
-				'Helped to solve critical issues for minimizing operational costs at a drilling company, utilizing technical expertise to identify inefficiencies and streamline processes',
-				'Developed and maintained a microservice gateway to work with the Primavera system, enabling efficient and reliable communication between different components of the system',
-				'Maintained NPM packages for company development processes, ensuring that all team members had access to the latest and most up-to-date tools and technologies for development',
-				'Developed a REST API gateway between frontend and Python analytics, enabling efficient and secure communication between different components of the system',
-			],
-			stack: [
-				ETech.typescript,
-				ETech.nodejs,
-				ETech.nestjs,
-				ETech.typeorm,
-				ETech.postgres,
-
-				ETech.python,
-				ETech.flask,
-				ETech.sqlalchemy,
-			],
-		},
-		{
-			role: 'Team Lead',
+			role: 'Fullstack Developer',
 			companyName: 'Allbebet',
 			projectDesc: `I was invited to this project at the peak of the crypto ICOs.
 				It was necessary to develop a platform for betting on soccer matches.
@@ -326,13 +274,14 @@ export const RESUME: IResume = {
 		},
 	],
 	hobbies: [
+		'♟ A competitive chess player at a master level, with a passion for complex strategy and problem-solving',
 		'🦄 I love exploring new technologies and ideas by working on side projects',
 		'🥋 I have a passion for Brazilian jiu-jitsu',
 		'🍳 I enjoy cooking and experimenting with different recipes',
 	],
 	contacts: [
-		{ name: 'Email', value: '3zemil@gmail.com' },
+		{ name: 'Email', value: '3zemil🐶gmail.com' },
 		{ name: 'Telegram', value: '@emilzar' },
-		{ name: 'LinkedIn', value: 'https://www.linkedin.com/in/zemil' },
+		// { name: 'LinkedIn', value: 'https://www.linkedin.com/in/zemil' },
 	],
 };
